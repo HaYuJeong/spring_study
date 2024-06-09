@@ -2,8 +2,8 @@ package hello.hello_spring.service;
 
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -22,6 +22,7 @@ import java.util.Optional;
  * 2024-06-06(006)         hayj6          최초 생성
  */
 @Service
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
