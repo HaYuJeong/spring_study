@@ -48,6 +48,7 @@ public class MemberService {
                         throw new RuntimeException(e);
                     }
                 });
+        
     }
 
     public List<Member> findMembers(){
